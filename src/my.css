@@ -1,0 +1,89 @@
+body{
+  background-color: rgb(17, 51, 45);
+  color: white;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: .5s;
+  animation-name: showOp;
+  animation-timing-function: linear;
+  animation-duration: .5s;
+}
+@keyframes showOp{
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+table{
+  position: relative;
+  opacity: 1;
+  top: 0px;
+  width: 100%;
+  text-align: left;
+  background-color: rgb(6, 61, 54);
+  color: white;
+  border-collapse: collapse;
+  transition-property: opacity, top;
+  transition-duration: .5s;
+  animation: showTab linear .5s;
+  z-index: 1;
+}
+@keyframes showTab{
+  0%{opacity: 0; top: -50px}
+  50%{opacity: 0; top: -50px}
+  100%{opacity: 1; top: 0px}
+}
+
+.tr-head{
+  border-bottom: 3px solid white;
+}
+td, th{
+  padding: 10px;
+}
+button{
+  background-color: rgba(211, 66, 66, 0.486);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transition-property: background-color;
+  transition-duration: .2s;
+}
+button:hover{
+  background-color: rgb(211, 66, 66);
+}
+form{
+  display: block;
+  position: relative;
+  left: 0px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.548);
+  top: 0px;
+  padding: 5px;
+  padding-top: 0.2px;
+  transition-property: opacity, top;
+  transition-duration: .5s;
+  animation: showForm linear .8s;
+}
+
+@keyframes showForm{
+  0%{opacity: 0; top: -150px}
+  50%{opacity: 0; top: -150px}
+  100%{opacity: 1; top: 0px}
+}
+input{
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+h3{
+  font-weight: normal;
+  border-bottom: 1px solid white;
+}
+.succ{
+  background-color:rgba(15, 156, 199, 0.205);
+}
+.succ:hover{
+  background-color:rgb(15, 156, 199);
+}
